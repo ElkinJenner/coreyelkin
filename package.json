@@ -1,0 +1,25 @@
+{
+  "name": "coreyelkin",
+  "version": "1.0.0",
+  "description": "A developer who works productively",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElkinJenner/coreyelkin.git"
+  },
+  "keywords": [
+    "coreyelkin"
+  ],
+  "author": "Corey Elkin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElkinJenner/coreyelkin/issues"
+  },
+  "homepage": "https://github.com/ElkinJenner/coreyelkin#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

@@ -1,0 +1,77 @@
+@import url(boxicons.css);
+@import url(akar-icons.css);
+@import url(responsive.css);
+/*------
+ NAVEGATION
+------ */
+.navegation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+.navegation a{
+    font-size: 2rem;
+    color: var(--color_dark);
+    font-family: var(--font_bold);
+}
+.switch_contender {
+    background: var(--color_plomo);
+    border-radius: 4rem;
+    width: 60px;
+    padding: .25rem .5rem .25rem .5rem;
+    display: flex;
+}
+.switch {
+    background: var(--color_white);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    cursor: var(--cursor_pointer);
+}
+.navbar_center, .navbar_right{
+    display: flex;
+}
+.navbar_center {
+    position: fixed;
+    top: 4.5rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.navbar_center ul{
+    display: grid;
+    margin-right: 1.5rem;
+}
+.navbar_right li{
+    margin-right: 1rem;
+    padding: .4rem;
+}
+.navbar_right .contact{
+    background: var(--color_gserbia);
+    border-radius: 1rem;
+}
+.navbar_right .contact a{
+    padding: .8rem;
+}
+/*------
+ABOUT
+------ */
+.about_contender{
+    width: 1150px;
+    margin: 0 auto;
+    text-align: center;
+}
+/*------
+PROJECTS
+------ */
+
+/*------
+SERVICES
+------ */
+
+/*------
+TEAM
+------ */
+
+/*------
+CONTACT
+------ */
