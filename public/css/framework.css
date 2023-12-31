@@ -1,12 +1,18 @@
 @font-face {
-    font-family: 'Benz Grotesk';
-    src: url('../fonts/BenzGrotesk.ttf') format('truetype');
+    font-family: 'Signika Bold';
+    src: url('../fonts/Signika-Bold.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
 }
 @font-face {
     font-family: 'Chivo Bold';
     src: url('../fonts/Chivo-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Chivo SemiBold';
+    src: url('../fonts/Chivo-SemiBold.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
 }
@@ -22,8 +28,6 @@
     --color_dark_p: #15171c;
     --bg_page: #101518;
     --color_white_p:#FFF;
-    --color_plomo: #808080;
-    --color_gperla:#d3d6df;
     --color_primary: #6398ff;
     --color_secundary:#50cd89;
     --color_third: #8accc2;
@@ -45,14 +49,15 @@
     /*-- Padding y Margins --*/
     --margin_c: 0 auto;
     /*-- Fonts --*/
-    --font_name:'Benz Grotesk';
+    --font_name:'Signika Bold';
     --font_bold: 'Chivo Bold';
+    --font_semibold: 'Chivo SemiBold';
     --font_medium: 'Chivo Medium';
     /*-- Cursores --*/
     --cursor_pointer: pointer;
 }
 .light_mode {
-    --color_nav: #FFF;
+    --color_nav: #4d4c4b;
     --color_cover: #f6f6f6;
     --color_cover2: #d8dee3;
     --color_body: #f7f9fa;
@@ -60,9 +65,10 @@
     --color_subtext: #575758;
     --color_subtitle:#99a1b7;
     --color_dark: #19191a;
+    --color_plomo: #4d4c4b;
     --color_gris: #f8f9fb;
     --color_gserbia: #e0e0e0;
-    --color_input: #6e6e6e;
+    --color_input: #808080;
     --color_white: #FFF;
     --color_border: #e1e0e0;
     --color_crosov: #f8f7f7;
@@ -72,7 +78,7 @@
 
 .dark_mode {
     /*-- Colors Opuestos --*/
-    --color_nav: #12151a;
+    --color_nav: #f3f3f3;
     --color_cover: #272a31;
     --color_cover2: #24262b;
     --color_body: #0f1014;
@@ -80,8 +86,9 @@
     --color_subtext: #c7c6c6;
     --color_subtitle: #99a1b7;
     --color_dark: #ffffff;
+    --color_plomo: #b0b0b0;
     --color_gris: #a8a8a8;
-    --color_gserbia: #858585;
+    --color_gserbia: #252629;
     --color_input: #f5f1f1;
     --color_white: #15171c;
     --color_border: #444;
@@ -124,7 +131,7 @@ body {
 }
 header {
     width: 100%;
-    position: fixed;
+    /*position: fixed;*/
     z-index: 2;
 }
 main{
@@ -190,33 +197,28 @@ h3,
 h4,
 h5,
 h6{
-    font-family: var(--font_semibold);
+    font-family: var(--font_bold);
 }
 h1 {font-size: 4.5rem; line-height: 5rem;}
 h2 {font-size: 3.8rem; line-height: 4.6rem;} 
 h3 {font-size: 3rem; line-height: 3.5rem;}
-h4 {font-size: 2.3rem; line-height: 2.5rem;}
-h5 {font-size: 1.35rem; line-height: 2rem;}
+h4 {font-size: 2.3rem; line-height: 2.7rem;}
+h5 {font-size: 1.5rem; line-height: 2rem;}
 h6 {font-size: 1.18rem; line-height: 2rem;}
 p  {font-size: 1.15rem; line-height: 1.5rem;}
 small {font-size: 1.05rem; font-weight: 100;}
 
-h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong{
-    font-family: var(--font_bold);
-}
-.big_t{font-size: 12rem; line-height: 12rem;}
+.big_t{font-size: 12.5rem; line-height: 10rem;}
 .h1{font-size: 6.1rem; line-height: 5.5rem;}
 .h2{font-size: 4.4rem; line-height: 4rem;}
-.h3{font-size: 3.25rem; line-height: 3rem;}
+.h3{font-size: 3.25rem; line-height: 3.8rem;}
 .h4{font-size: 2.55rem; line-height: 2.6rem;}
 .h5{font-size: 1.65rem; line-height: 1.74rem;}
 .h6{font-size: 1.4rem; line-height: 1.3rem;}
 .p{font-size: 1.28rem; line-height: 1.5rem;}
 
-.font_r {font-family: var(--font_regular); font-weight: 300;}
 .font_m {font-family: var(--font_medium); font-weight: 500;}
 .font_sb {font-family: var(--font_semibold)!important;}
-.font_b_m {font-family: var(--font_bold_m)!important;}
 .font_b {font-family: var(--font_bold)!important;}
 .font_n {font-family: var(--font_name)!important;}
 
@@ -269,6 +271,7 @@ h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong{
 .br05{border-radius: .5rem;}
 .br1{border-radius: 1rem;}
 .br2{border-radius: 2rem;}
+.br3{border-radius: 3rem;}
 .br{border-radius: 50%;}
 .border_security{
     border: 2px solid var(--color_security)!important;
