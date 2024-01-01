@@ -1,0 +1,166 @@
+/*-------
+PC Gama Alta Media 1440 x 900px
+PC Gama Media Baja 1280 x 800px
+-------*/
+@media only screen and (min-width: 1280px) and (max-width: 1440px) {
+    /*Fonts Size*/
+    .big_t{font-size: 9rem!important; line-height: 7.5rem!important;}
+    .about .big_t{font-size: 10rem!important; line-height: 8.5rem!important;}
+    .h1{font-size: 4.5rem!important; line-height: 4rem!important;}
+    .h2{font-size: 4rem!important; line-height: 4rem!important;}
+    .h3{font-size: 3rem!important; line-height: 3rem!important;}
+    .h4{font-size: 2.5rem!important; line-height: 2rem!important;}
+
+    h1 {font-size: 3.8rem!important; line-height: 3.2rem!important;}
+    h2 {font-size: 3.4rem!important; line-height: 3.5rem!important;} 
+    h3 {font-size: 2.6rem!important; line-height: 2.5rem!important;}
+    h4 {font-size: 2.1rem!important; line-height: 2.2rem!important;}
+}
+/*-------
+Smarthphone 641px x 1024px
+Tablet 768px x 1024px
+-------*/
+@media only screen and (min-width: 641px) and (max-width: 768px) {
+    /*Fonts Size*/
+    .big_t{font-size: 7rem!important; line-height: 6.5rem!important;}
+    .about .big_t{font-size: 8rem!important; line-height: 7rem!important;}
+    .h1{font-size: 3.2rem!important; line-height: 3rem!important;}
+    .h2{font-size: 3rem!important; line-height: 3rem!important;}
+    .h3{font-size: 2.2rem!important; line-height: 2.3rem!important;}
+    .h4{font-size: 2rem!important; line-height: 2rem!important;}
+
+    h1 {font-size: 3rem!important; line-height: 3rem!important;}
+    h2 {font-size: 2.7rem!important; line-height: 2.5rem!important;} 
+    h3 {font-size: 2rem!important; line-height: 2rem!important;}
+    h4 {font-size: 1.8rem!important; line-height: 2rem!important;}
+    /*Columns*/
+    .projects .column-6{width: 100%!important;}
+    /*Navegation*/
+    .navbar_right li a span{display: none;}
+    .navegation a{font-size: 1.2rem!important;}
+    .navbar_center ul li a{padding: .5rem 1rem .5rem 1rem!important;}
+    /*Home*/
+    .profile_me img{height: 500px;}
+
+}
+/*-------
+Smarthphone max 640px
+-------*/
+@media only screen and (max-width: 640px) {
+    /*Navegation*/
+    .menu_icono{display: block!important;}
+    .navegation{margin-top: 1.8rem!important;}
+    .navegation a{font-size: 1.25rem!important;}
+
+    .navbar_center{
+        transform: none !important;
+        background: var(--color_white);
+        top: 0rem !important;
+        left: 0rem !important;
+        width: 100%;
+        min-height: 100vh;
+        transition: all .6s ease;
+    }
+    .navbar_center{display: block;}
+    .navbar_center ul li a{font-size: 2.1rem !important; font-family: var(--font_semibold); margin-left: 1.5rem !important;}
+    .navegation_responsive {margin-left: -100%;}
+    .navbar_center ul{
+        display: grid!important;
+        align-items: center;
+        align-content: center;
+    }
+    .navbar_center ul li .active{
+        background: inherit !important;
+        color: inherit !important;
+        padding: 1.1rem !important;
+    }
+    .navbar_right li a span{display: none;}
+    .switch_contender{margin-top: initial!important;}
+
+}
+/*-------
+Smarthphone 481px x 768px
+Smarthphone 640px x 1024px
+-------*/
+@media only screen and (min-width: 481px) and (max-width: 640px) {
+    /*Fonts Size*/
+    .big_t{font-size: 5.5rem!important; line-height: 4.2rem!important;}
+    .about .big_t{font-size: 7rem!important; line-height: 6rem!important;}
+    .h1{font-size: 2.7rem!important; line-height: 2.7rem!important;}
+    .h2{font-size: 2.2rem!important; line-height: 2.2rem!important;}
+    .h3{font-size: 1.8rem!important; line-height: 2rem!important;}
+    .h4{font-size: 1.6rem!important; line-height: 1.6rem!important;}
+
+    h1 {font-size: 2.5rem!important; line-height: 2rem!important;}
+    h2 {font-size: 2rem!important; line-height: 2rem!important;} 
+    h3 {font-size: 1.65rem!important; line-height: 1.6rem!important;}
+    h4 {font-size: 1.4rem!important; line-height: 1.5rem!important;}
+    /*Projects*/
+    .projects_item{width: 98%!important; margin-top: .25rem!important; margin-bottom: .25rem !important;}
+    .projects .column-6{width: 100%!important;}
+    .projects_item .img_pr{height: 450px!important;}
+    /*Navegation*/
+    .navegation{margin-top: 1.8rem!important;}
+    .navegation a{font-size: 1.25rem!important;}
+    /*Home*/
+    .profile_me img{height: 600px;}
+    .main{padding-top:2rem!important; min-height: inherit!important;}
+    /*Services*/
+    .services .column-5{width: 60%!important;}
+    .services .column-6{width: 38%!important;}
+    .services_item img{height: 360px!important;}
+
+}
+/*-------
+Smarthphone 360px x 768px
+Smarthphone 480px x 1024px
+-------*/
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+    /*Fonts Size*/
+    .big_t{font-size: 3.5rem!important; line-height: 2.6rem!important;}
+    .about .big_t{font-size: 6rem!important; line-height: 5rem!important;}
+    .h1{font-size: 2.4rem!important; line-height: 2.2rem!important;}
+    .h2{font-size: 2rem!important; line-height: 2.2rem!important;}
+    .h3{font-size: 1.8rem!important; line-height: 2rem!important;}
+    .h4{font-size: 1.6rem!important; line-height: 1.6rem!important;}
+
+    h1 {font-size: 2rem!important; line-height: 2rem!important;}
+    h2 {font-size: 1.8rem!important; line-height: 2rem!important;} 
+    h3 {font-size: 1.6rem!important; line-height: 1.6rem!important;}
+    h4 {font-size: 1.2rem!important; line-height: 1.4rem!important;}
+    /*Projects*/
+    .projects_item{width: 98%!important; margin-top: .25rem!important; margin-bottom: .25rem !important;}
+    .projects .column-6{width: 100%!important;}
+    .projects_item .img_pr{height: 450px!important;}
+    /*Home*/
+    .profile_me img{height: 600px;}
+    .main{padding-top:2rem!important; min-height: inherit!important;}
+    /*Services*/
+    .services .column-5{width: 60%!important;}
+    .services .column-6{width: 38%!important;}
+    .services_item img{height: 360px!important;}
+
+}
+@media only screen and (max-width: 360px) {
+/*Fonts Size*/
+    .big_t{font-size: 3rem!important; line-height: 2rem!important;}
+    .about .big_t{font-size: 4rem!important; line-height: 3.2rem!important;}
+    .h1{font-size: 2rem!important; line-height: 2rem!important;}
+    .h2{font-size: 1.7rem!important; line-height: 1.7rem!important;}
+    .h3{font-size: 1.45rem!important; line-height: 1.45rem!important;}
+    .h4{font-size: 1.2rem!important; line-height: 1.2rem!important;}
+    h1 {font-size: 1.8rem!important; line-height: 1.6rem!important;}
+    h2 {font-size: 1.65rem!important; line-height: 1.8rem!important;} 
+    h3 {font-size: 1.5rem!important; line-height: 1.5rem!important;}
+    h4 {font-size: 1rem!important; line-height: 1rem!important;}
+    /*Home*/
+    .profile_me img{height: 400px;}
+    .main{padding-top:2rem!important; min-height: inherit!important;}
+    .about .column-5, .about .column-6 {width: 100%;}
+    .navbar_center ul li a{font-size: 1.5rem !important;}
+    /*Services*/
+    .services .column-5{width: 60%!important;}
+    .services .column-6{width: 38%!important;}
+    .services_item img{height: 360px!important;}
+
+}

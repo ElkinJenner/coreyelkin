@@ -54,7 +54,8 @@
     --font_medium: 'Chivo Medium';
     --font_light: 'Chivo Light';
     /*-- Cursores --*/
-    --cursor_pointer: pointer;
+    --cursor_pointer: url(../img/cursor_pointer.svg) 10 2, default;
+    --cursor_click: url(../img/cursor_click.svg) 10 2, default;
 }
 .light_mode {
     --color_nav: #4d4c4b;
@@ -128,6 +129,10 @@ body {
     color: var(--color_dark);
     font-family: var(--font_medium);
     position: relative;
+    cursor: var(--cursor_pointer);
+}
+body:active{
+    cursor: var(--cursor_click);
 }
 header {
     width: 100%;
@@ -139,7 +144,7 @@ main{
 }
 li{list-style: none;}
 a{
- cursor: var(--cursor_pointer);
+ cursor: var(--cursor_click);
  text-decoration: none;
 }
 img{max-width: 100%;
@@ -153,7 +158,7 @@ input, button{
     font-family: var(--font_medium);
 }
 button{
-    cursor: var(--cursor_pointer);
+    cursor: var(--cursor_click);
     font-size: 1.1rem;
     background: var(--color_primary);
     color: var(--color_white_p);

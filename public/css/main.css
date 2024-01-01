@@ -4,6 +4,35 @@
 /*------
  NAVEGATION
 ------ */
+.menu_icono {
+    position: relative;
+    float: right;
+    margin: .5rem;
+    cursor: var(--cursor_pointer);
+    z-index: 100;
+    display: none;
+}
+.icono_open {
+    width: 30px;
+    height: 3px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+    background: var(--color_plomo);
+}
+.icono_open2 {
+    width: 30px;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+    background: var(--color_plomo);
+}
+.icono_close .icono_open {
+    transform: translate(0, 10px) rotate(45deg);
+    background: var(--color_plomo);
+}
+.icono_close .icono_open2 {
+    transform: translate(0, -3px) rotate(-45deg);
+    background: var(--color_plomo);
+}
 .navegation {
     display: flex;
     justify-content: space-between;
@@ -21,7 +50,7 @@
     padding: .25rem 0rem .25rem .25rem;
     display: flex;
     margin-top: 1rem;
-    cursor: var(--cursor_pointer);
+    cursor: var(--cursor_click);
 }
 .switch_l, .switch_r {
     background: var(--color_white);
@@ -80,7 +109,6 @@ ABOUT
 .about_desc{
     display: grid;
     align-items: center;
-    text-align: justify;
 }
 .profile_me{
     position: relative;
@@ -93,6 +121,7 @@ ABOUT
     bottom: auto;
     margin-top: 24px;
     margin-left: 24px;
+    height: initial !important;
 }
 /*------
 PROJECTS

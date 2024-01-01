@@ -21,3 +21,20 @@ switch_c.addEventListener('click', function () {
         count_switch = 0;
     }
 });
+
+//Menu Responsive
+let menu_icono = document.getElementById("menu_icono");
+let navbar_center = document.getElementById("navbar_center");
+let count_nav = 0;
+menu_icono.addEventListener('click', function () {
+    if (count_nav == 0) {
+        navbar_center.classList.remove("navegation_responsive");
+        menu_icono.classList.add("icono_close");
+        count_nav = 1;
+    }
+    else {
+        navbar_center.classList.add("navegation_responsive");
+        menu_icono.classList.remove("icono_close");
+        count_nav = 0;
+    }
+});
