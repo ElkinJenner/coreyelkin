@@ -47,6 +47,9 @@
     background: var(--color_white);
     border-radius: 2rem;
 }
+.navbar_center ul li{
+    padding: .1rem;
+}
 .navbar_center ul li a{
     padding: .7rem 1.5rem .7rem 1.5rem;
     display: block;
@@ -55,7 +58,9 @@
     background: var(--color_dark);
     color: var(--color_white);
     border-radius: 1.5rem;
-    padding: .7rem 1rem .7rem 1rem;
+    margin: .1rem;
+    padding: .7rem .8rem .7rem .8rem;
+    font-size: 1.3rem;
 }
 .navbar_right li{
     padding: .4rem;
@@ -92,7 +97,59 @@ ABOUT
 /*------
 PROJECTS
 ------ */
-
+.projects_item{
+    width: 96%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.projects_item .left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    margin-top: 24px;
+    margin-left: 24px;
+    background: var(--box_shadow);
+    padding: .65rem 1rem;
+    border-radius: .84rem;
+}
+.projects_item .left small{
+    font-size: .95rem;
+    font-family: var(--font_light);
+    text-transform: uppercase;
+    letter-spacing: -.5px;
+}
+.projects_item .right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: auto;
+    bottom: auto;
+    margin-top: 24px;
+    margin-right: 24px;
+    background: var(--box_shadow);
+    padding: .65rem 1rem;
+    border-radius: .84rem;
+}
+.projects_item .right small {
+    font-size: .8rem;
+    font-family: var(--font_light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.projects_item .img_pr {
+    height: 700px;
+}
+.projects_item .img_pr2{
+    width: 930px;
+    height: 700px;
+}
+.projects_item .img_pr3 {
+    width: 700px;
+    height: 700px;
+}
 /*------
 SERVICES
 ------ */

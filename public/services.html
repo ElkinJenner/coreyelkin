@@ -7,6 +7,14 @@
     <link rel="shortcut icon" href="favicon.png">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/framework.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            new window['Cursor']({
+                targets: ['a']
+            })
+        })
+    </script>
+    <script defer src="https://unpkg.com/custom-cursor@latest/dist/cursor.min.js"></script>
 </head>
 <body class="light_mode" id="body">
     <!--Menu de Navegación-->
@@ -25,8 +33,8 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a class="active" href="services.html">Services</a></li>
-                        <li><a href="">Projects</a></li>
-                        <li><a href="">Team</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="team.html">Team</a></li>
                     </ul>
                 </div>
 
@@ -56,10 +64,7 @@
                 <div class="column-6 services_desc">
                     <article class="article_item">
                         <h2>UX / UI Design</h2><br>
-                        <h4 class="font_m">A good design transforms the experience of your users.</h4><br>
-                        <h5 class="font_m">Every detail to create attractive and functional
-                            interfaces that captivate and retain your audience.
-                        </h5>
+                        <h4 class="font_m">A good design transforms the experience of your users.</h4>
                     </article>
                 </div>
                 <div class="column-6 services_desc">
@@ -67,13 +72,7 @@
                         <h2>Web applications</h2><br>
                         <h4 class="font_m">Each project is unique and adapted to new needs.
                             Applying solutions derived from the code.
-                        </h4><br>
-                        <h5 class="font_m">
-                            I use cutting-edge technologies such as HTML5, CSS3, Javascript (React Js) for the Frontend, as well as PHP or Node Js
-                            for the Backend.<br>
-                            
-                            I work with MYSQL or MongoDB database.
-                        </h5>
+                        </h4>
                     </article>
                 </div>
                 <div class="column-5">
@@ -91,9 +90,7 @@
                             <h2>3D Modeling</h2><br>
                             <h4 class="font_m">Captivating and detailed three-dimensional
                                 images that transform your ideas into amazing visualizations.
-                            </h4><br>
-                            <h5 class="font_m">Discover the power of extra dimension with our expert 3D
-                            modeling team.</h5>
+                            </h4>
                         </article>
                     </div>
             </aside>

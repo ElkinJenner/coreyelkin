@@ -1,10 +1,4 @@
 @font-face {
-    font-family: 'Signika Bold';
-    src: url('../fonts/Signika-Bold.ttf') format('truetype');
-    font-style: normal;
-    font-weight: normal;
-}
-@font-face {
     font-family: 'Chivo Bold';
     src: url('../fonts/Chivo-Bold.ttf') format('truetype');
     font-style: normal;
@@ -19,6 +13,12 @@
 @font-face {
     font-family: 'Chivo Medium';
     src: url('../fonts/Chivo-Medium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Chivo Light';
+    src: url('../fonts/Chivo-Light.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
 }
@@ -49,10 +49,10 @@
     /*-- Padding y Margins --*/
     --margin_c: 0 auto;
     /*-- Fonts --*/
-    --font_name:'Signika Bold';
     --font_bold: 'Chivo Bold';
     --font_semibold: 'Chivo SemiBold';
     --font_medium: 'Chivo Medium';
+    --font_light: 'Chivo Light';
     /*-- Cursores --*/
     --cursor_pointer: pointer;
 }
@@ -521,6 +521,61 @@ input::placeholder{
 }
 input:focus{
     background-color: var(--color_crosov)!important;
+}
+/*------
+Cursor
+------ */
+[data-cursor] {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(120deg, #ff1744, #e040fb, #2979ff, #00e5ff, #76ff03);
+    background-size: 1600% 1600%;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    z-index: 50;
+    transition: 0.15s linear;
+    animation: blobRadius 5s ease infinite, blobBackground 15s ease infinite;
+}
+
+@keyframes blobRadius {
+
+    0%,
+    100% {
+        border-radius: 43% 77% 80% 40%/40% 40% 80% 80%;
+    }
+
+    20% {
+        border-radius: 47% 73% 61% 59%/47% 75% 45% 73%;
+    }
+
+    40% {
+        border-radius: 46% 74% 74% 46%/74% 58% 62% 46%;
+    }
+
+    60% {
+        border-radius: 47% 73% 61% 59%/40% 40% 80% 80%;
+    }
+
+    80% {
+        border-radius: 50% 70% 52% 68%/51% 61% 59% 69%;
+    }
+}
+
+@keyframes blobBackground {
+
+    0%,
+    100% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+.cursor-hover--a [data-cursor] {
+    width: 50px;
+    height: 50px;
 }
 
 /*------
