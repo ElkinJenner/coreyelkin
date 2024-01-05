@@ -1,0 +1,112 @@
+.player_music_contender{
+    position:fixed;
+    bottom: .8rem;
+    margin-left: 4.25rem;
+}
+.player_music{
+    background: var(--color_white);
+    border-radius: 1.25rem;
+    padding: .85rem;
+    display: flex;
+    box-shadow: 0px 0px 5px var(--box_shadow);
+}
+.player_music .cover, .player_music .theme{
+    margin-right: .4rem;
+    display: grid;
+    align-content: center;
+    position: relative;
+}
+.player_music .action{
+    display: grid;
+    margin-right: .4rem;
+    align-content: center;
+}
+.player_music .music_icon{
+    display: grid;
+    align-content: center;
+}
+.player_music .action .icon, .player_music .music_icon .icon{
+    font-size: 1.5rem;
+}
+.player_music .cover img{
+    border-radius: .5rem;
+    filter: brightness(.7);
+}
+.player_music .cover .play{
+    position: absolute;
+    top: .8rem;
+    left: .8rem;
+    color: var(--color_white_p);
+    font-size: 2rem;
+    z-index: 1;
+}
+.player_music .theme{
+    display: grid;
+    align-items: center;
+    min-width: 200px;
+}
+/*-------
+Animation waves
+-------*/
+.sound_waves {
+    position: absolute;
+    top: 1.2rem;
+    left: 1.2rem;
+    display: flex;
+    gap: 5px;
+    margin-right: 1rem;
+    z-index: 1;
+}
+
+.sound_wave {
+    background-color: #ffffffc4;
+    border-radius: .1rem;
+}
+
+.sound_wave.small {
+    width: 3px;
+    height: 10px;
+    animation: waveAnimation 1s linear infinite alternate;
+}
+
+.sound_wave.medium {
+    width: 3px;
+    height: 12px;
+    animation: waveAnimation2 1s linear infinite alternate;
+}
+
+.sound_wave.large {
+    width: 5px;
+    height: 14px;
+    animation: waveAnimation3 1s linear infinite alternate;
+}
+
+@keyframes waveAnimation {
+    0% {
+        transform: scaleY(1);
+    }
+
+    100% {
+        transform: scaleY(1.5);
+    }
+}
+
+@keyframes waveAnimation2 {
+    0% {
+        transform: scaleY(3);
+    }
+
+    100% {
+        transform: scaleY(.5);
+    }
+}
+
+@keyframes waveAnimation3 {
+    0% {
+        transform: scaleY(1);
+    }
+
+    100% {
+        transform: scaleY(.1);
+    }
+}

@@ -33,7 +33,7 @@
     --color_third: #8accc2;
     --color_fourth: #565add;
     --color_fifth: #fd8549;
-    --color_sixth:#d1d1f7;
+    --color_sixth:#e4d9f0;
     --color_verify: #22b96e;
     --color_security: #31c9ad;
     --color_alert: #ffde3b;
@@ -111,15 +111,16 @@
 
 ::-webkit-scrollbar-track {
     border-radius: 4rem;
-    background-color: transparent;
+    background-color: transparent
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: transparent;
+    background-color: var(--color_subtitle);
+    border-radius: 4rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: transparent;
+    background-color: var(--color_border);
 }
 /*------
 GENERALES
@@ -370,20 +371,6 @@ CONTENDERS
     align-content: center;
     justify-content: center;
     min-height: 100vh;
-}
-.lista_d{
-    display: grid;
-    padding: 1rem;
-    margin: 1.5rem;
-}
-.lista_d li{
-    display: flex;
-    align-items: center;
-    margin-bottom: .6rem;
-}
-.lista_d h5{
-    font-family: var(--font_body);
-    font-weight: 100;
 }
 .check_c {
     background: var(--color_security);

@@ -17,6 +17,23 @@ PC Gama Media Baja 1280 x 800px
     h4 {font-size: 2.1rem!important; line-height: 2.2rem!important;}
 }
 /*-------
+Tablet o Desktop max 1024px
+-------*/
+@media only screen and (max-width: 1024px) {
+     /*Fonts Size*/
+    .big_t{font-size: 7rem!important; line-height: 6.5rem!important;}
+    .about .big_t{font-size: 8rem!important; line-height: 7rem!important;}
+    .h1{font-size: 3.2rem!important; line-height: 3rem!important;}
+    .h2{font-size: 3rem!important; line-height: 3rem!important;}
+    .h3{font-size: 2.2rem!important; line-height: 2.3rem!important;}
+    .h4{font-size: 2rem!important; line-height: 2rem!important;}
+
+    h1 {font-size: 3rem!important; line-height: 3rem!important;}
+    h2 {font-size: 2.7rem!important; line-height: 2.5rem!important;} 
+    h3 {font-size: 2rem!important; line-height: 2rem!important;}
+    h4 {font-size: 1.8rem!important; line-height: 2rem!important;}
+}
+/*-------
 Smarthphone 641px x 1024px
 Tablet 768px x 1024px
 -------*/
@@ -75,7 +92,21 @@ Smarthphone max 640px
         padding: 1.1rem !important;
     }
     .navbar_right li a span{display: none;}
-    .switch_contender{margin-top: initial!important;}
+    .switch_contender{margin-top: initial!important; padding: 0.15rem!important; width: 40px!important;}
+    .switch_l, .switch_r {width: 18px!important; height: 18px!important;}
+    .switch_r{margin-left: .94rem!important;}
+
+    /*Player music*/
+    .player_music_contender{
+        bottom: 4rem!important;
+        margin-left: 1.25rem!important;
+    }
+    /*Home*/
+    .about .column{margin-left: 0rem!important;}
+    .about .about_resume{float: left;}
+    .about .about_resume small{font-size: .85rem!important;}
+    .about .about_resume button{padding: .6rem!important; font-size: 1.15rem!important;}
+
 
 }
 /*-------
@@ -106,8 +137,8 @@ Smarthphone 640px x 1024px
     .profile_me img{height: 600px;}
     .main{padding-top:2rem!important; min-height: inherit!important;}
     /*Services*/
-    .services .column-5{width: 60%!important;}
-    .services .column-6{width: 38%!important;}
+    .services .column-5{width: 38%!important;}
+    .services .column-6{width: 60%!important;}
     .services_item img{height: 360px!important;}
 
 }
@@ -136,8 +167,8 @@ Smarthphone 480px x 1024px
     .profile_me img{height: 600px;}
     .main{padding-top:2rem!important; min-height: inherit!important;}
     /*Services*/
-    .services .column-5{width: 60%!important;}
-    .services .column-6{width: 38%!important;}
+    .services .column-5{width: 38%!important;}
+    .services .column-6{width: 60%!important;}
     .services_item img{height: 360px!important;}
 
 }
