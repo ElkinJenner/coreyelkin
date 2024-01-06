@@ -31,8 +31,8 @@
     --color_primary: #6398ff;
     --color_secundary:#50cd89;
     --color_third: #8accc2;
-    --color_fourth: #565add;
-    --color_fifth: #fd8549;
+    --color_fourth: #fd8549;
+    --color_fifth: #b7e6ff;
     --color_sixth:#e4d9f0;
     --color_verify: #22b96e;
     --color_security: #31c9ad;
@@ -266,6 +266,7 @@ small {font-size: 1.05rem; font-weight: 100;}
 .c_third{color: var(--color_third);}
 .c_fourt{color: var(--color_fourth);}
 .c_fifth{color: var(--color_fifth);}
+.c_sixth{color: var(--color_sixth);}
 .c_security{color: var(--color_security)!important;}
 .c_verify{color: var(--color_verify)!important;}
 .c_alert{color: var(--color_alert)!important;}

@@ -218,7 +218,33 @@ SERVICES
 /*------
 TEAM
 ------ */
-
+.team_hire{
+    padding-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+.team_hire button {
+    background: var(--color_fifth);
+    color: var(--color_dark_p);
+    padding: 1.65rem;
+    border-radius: 2.5rem;
+    box-shadow: none;
+}
+.team_message{
+    display: inline-block;
+    margin: 1rem 2rem;
+    text-align: justify;
+}
+.team_item{
+    width: 94%;
+    background: var(--color_white);
+    display: grid;
+    align-content: center;
+    border-radius: 2rem;
+    padding: 2rem;
+    height: 400px;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
 /*------
 CONTACT
 ------ */
