@@ -577,7 +577,6 @@ Footer
 footer{
     padding-top: 3rem;
     padding-bottom: 3rem;
-    border-top: 1px solid var(--color_border);
 }
 footer ul{
     display: flex;

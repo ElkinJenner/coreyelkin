@@ -82,23 +82,29 @@
             </aside>
         </div>
     </main>
+    <!--Footer-->
+    <footer>
+        <div class="container">
+
+        </div>
+    </footer>
     <!--Player music-->
     <article class="player_music_contender">
         <div class="player_music">
             <date_add class="action">
-                <i class='icon bx bx-first-page'></i>
+                <i class='icon bx bx-first-page' id="back_m"></i>
             </date_add>
-            <date_add class="cover">
-                <div class="sound_waves">
+            <date_add class="cover" id="action_music">
+                <div class="hidden sound_waves" id="pause">
                     <div class="sound_wave small"></div>
                     <div class="sound_wave medium"></div>
                     <div class="sound_wave large"></div>
                 </div>
-                <!--<i class="play ai-pause"></i>-->
+                <i class="play ai-play" id="play"></i>
                 <img class="img60" src="https://i.scdn.co/image/ab67616d0000b2739b6ac98a52f62d5cb473da40">
             </date_add>
             <date_add class="action">
-                <i class='icon bx bx-last-page'></i>
+                <i class='icon bx bx-last-page' id="next_m"></i>
             </date_add>
             <date_add class="theme">
                 <p> <strong>Nervous</strong></p>
@@ -111,5 +117,6 @@
         </div>
     </article>
     <script src="js/main.js"></script>
+    <script src="js/play.js"></script>
 </body>
 </html>

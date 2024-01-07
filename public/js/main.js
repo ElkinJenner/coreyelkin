@@ -21,7 +21,6 @@ switch_c.addEventListener('click', function () {
         count_switch = 0;
     }
 });
-
 //Menu Responsive
 let menu_icono = document.getElementById("menu_icono");
 let navbar_center = document.getElementById("navbar_center");

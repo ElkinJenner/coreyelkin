@@ -245,6 +245,10 @@ TEAM
     gap: 1rem;
     margin-bottom: 2rem;
 }
+.team_item img{
+    filter: var(--filter);
+}
+.team_item h4{line-height: 1.95rem;}
 /*------
 CONTACT
 ------ */

@@ -15,6 +15,42 @@ PC Gama Media Baja 1280 x 800px
     h2 {font-size: 3.4rem!important; line-height: 3.5rem!important;} 
     h3 {font-size: 2.6rem!important; line-height: 2.5rem!important;}
     h4 {font-size: 2.1rem!important; line-height: 2.2rem!important;}
+    /*Navigation*/
+    .navegation{margin-top: 2rem!important;}
+    .navegation a{font-size: 1.25rem!important;}
+    .navbar_center{top: 3.4rem!important;}
+    .switch_contender{margin-top:.4rem!important; padding: 0.15rem 0rem 0.15rem 0.15rem!important; width: 45px!important;}
+    .switch_l, .switch_r{width: 20px!important; height: 20px!important;}
+    .switch_r {margin-left: 1.25rem!important;}
+    /*About*/
+    .about .column-6{width: 56%!important;}
+    .about_resume{float: left!important;}
+    /*Team*/
+    .team .big_t{font-size: 8rem!important;}
+    /*Projects*/
+    .projects_item .img_pr{height: 580px!important;}
+}
+/*-------
+Desktop max 1439px
+-------*/
+@media only screen and (max-width: 1279px) {
+     /*Fonts Size*/
+    .big_t{font-size: 8rem!important; line-height: 7.5rem!important;}
+    .about .big_t{font-size: 8rem!important; line-height: 7rem!important;}
+    .h1{font-size: 3.2rem!important; line-height: 3rem!important;}
+    .h2{font-size: 3rem!important; line-height: 3rem!important;}
+    .h3{font-size: 2.2rem!important; line-height: 2.3rem!important;}
+    .h4{font-size: 2rem!important; line-height: 2rem!important;}
+
+    h1 {font-size: 3rem!important; line-height: 3rem!important;}
+    h2 {font-size: 2.7rem!important; line-height: 2.5rem!important;} 
+    h3 {font-size: 2rem!important; line-height: 2rem!important;}
+    h4 {font-size: 1.8rem!important; line-height: 2rem!important;}
+    /*About*/
+    .about .column-6{width: 56%!important;}
+    .about_resume{float: left!important;}
+    /*Projects*/
+    .projects_item .img_pr{height: 500px!important;}
 }
 /*-------
 Tablet o Desktop max 1024px
