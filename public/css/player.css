@@ -45,6 +45,18 @@
     align-items: center;
     min-width: 200px;
 }
+.player_music .theme .song{
+    max-width: 120px;;
+    overflow: hidden;
+}
+.player_music .theme .song p{
+    white-space: nowrap;
+    animation: moveSong 7s linear infinite;
+}
+@keyframes moveSong {
+    0% {transform: translateX(100%);}
+  100% {transform: translateX(-100%);}
+}
 /*-------
 Animation waves
 -------*/
