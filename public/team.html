@@ -111,11 +111,39 @@
                         <h4 class="t_c">Product designer</h4>
                     </article>
                 </div>-->
-
             </aside>
         </div>
     </main>
+    <!--Player music-->
+    <article class="player_music_contender">
+        <div class="player_music">
+            <date_add class="action">
+                <i class='icon bx bx-first-page' id="back_m"></i>
+            </date_add>
+            <date_add class="cover" id="action_music">
+                <div class="hidden sound_waves" id="pause">
+                    <div class="sound_wave small"></div>
+                    <div class="sound_wave medium"></div>
+                    <div class="sound_wave large"></div>
+                </div>
+                <i class="play ai-play" id="play"></i>
+                <picture id="album"></picture>
+            </date_add>
+            <date_add class="action">
+                <i class='icon bx bx-last-page' id="next_m"></i>
+            </date_add>
+    
+            <date_add class="theme" id="song">
+            </date_add>
+    
+            <date_add class="volume_control">
+                <i class="icon ai-sound-on" id=""></i>
+                <input type="range" id="volume" min="0" max="1" step="0.1" value="0.6">
+            </date_add>
+        </div>
+    </article>
     <script src="js/main.js"></script>
+    <script src="js/play.js"></script>
 </body>
 
 </html>
